@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.italkmind.client.vo.protocol.body;
+
+message ItalkMindHeader {
+    uint32 checkCode = 1;
+    uint32 cmdType = 2;
+    uint64 messageId = 3;
+}

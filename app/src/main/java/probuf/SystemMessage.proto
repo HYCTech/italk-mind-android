@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package com.italkmind.client.vo.protocol.body;
+
+message ErrorResultAck {
+    uint32 code = 1;
+}
+
+message ConnectAuthReq {
+    uint64 userId = 1;
+    string tokenId = 2;
+}
+
+message ConnectAuthAck {
+    uint32 authType = 1;
+}
+
+message ContentCheckReq {
+    string content = 1;
+}
+
+message ContentCheckAck {
+    uint32 crc32 = 1;
+}

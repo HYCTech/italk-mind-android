@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <include layout="@layout/title_text_bar" />
+
+    <RelativeLayout
+        android:id="@+id/init"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ns_dialog_card_bg">
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/ark_color_gray" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="设置备注和标签"
+            android:textColor="@color/color_black_86"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp"
+            android:layout_alignTop="@+id/remark"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/jt" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/remark"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/ark_color_gray" />
+
+        <TextView
+            android:id="@+id/tv_user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="电话号码"
+            android:textColor="@color/color_black_86"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_user_number"
+            android:background="@null"
+            android:textColor="@color/color_black_70"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/user_number"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/ark_color_gray" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="上传头像"
+        android:textColor="@color/color_black_86"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="68dp"
+        android:layout_height="26dp"
+        android:layout_alignTop="@+id/init"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:text="接受"
+        android:textColor="@color/white" />
+</RelativeLayout>

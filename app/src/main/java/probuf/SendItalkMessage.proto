@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package com.italkmind.client.vo.protocol.body;
+
+message SendTextMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    string textBody = 3;
+}
+
+message SendPositionMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    string latitude = 3;
+    string longitude = 4;
+    string address = 5;
+}
+
+message SendImageMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    uint32 width = 3;
+    uint32 height = 4;
+    string thumbRemotePath = 5;
+    string rawRemotePath = 6;
+}
+
+message SendVideoMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    uint32 duration = 3;
+    uint32 width = 4;
+    uint32 height = 5;
+    string thumbRemotePath = 6;
+    string rawRemotePath = 7;
+}
+
+message SendVoiceMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    uint32 duration = 3;
+    string remotepath = 4;
+}
+
+message SendWithdrawMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    uint64 clientMsgId = 3;
+}
+
+message SendFileMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    string remotepath = 3;
+    uint32 size = 4;
+    string filename = 5;
+}

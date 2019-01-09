@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+    android:fromYDelta="0"
+    android:toYDelta="100%" />
+
+    <!--public void show() {-->
+    <!--final Dialog dialog = new Dialog(this, R.style.dialog);-->
+    <!--//填充对话框的布局-->
+    <!--View inflate = LayoutInflater.from(this).inflate(R.layout.dialog_bottom, null);-->
+    <!--//初始化控件-->
+    <!--TextView mTitle = inflate.findViewById(R.id.dialog_title);-->
+    <!--mTitle.setText("将清空所有个人和群聊的聊天记录");-->
+    <!--TextView mEmptyChat = inflate.findViewById(R.id.empty_chat);-->
+    <!--mEmptyChat.setText("清空聊天记录");-->
+    <!--mEmptyChat.setOnClickListener(new View.OnClickListener() {-->
+    <!--@Override-->
+    <!--public void onClick(View view) {-->
+    <!--Toast.makeText(PerfectInformationActivity.this,"清空聊天记录",Toast.LENGTH_SHORT).show();-->
+    <!--}-->
+    <!--});-->
+    <!--TextView mCencel = inflate.findViewById(R.id.cancel);-->
+    <!--mCencel.setText("取消");-->
+    <!--mCencel.setOnClickListener(new View.OnClickListener() {-->
+    <!--@Override-->
+    <!--public void onClick(View view) {-->
+    <!--dialog.dismiss();-->
+    <!--}-->
+    <!--});-->
+    <!--//将布局设置给Dialog-->
+    <!--dialog.setContentView(inflate);-->
+    <!--//获取当前Activity所在的窗体-->
+    <!--Window dialogWindow = dialog.getWindow();-->
+    <!--if(dialogWindow == null){-->
+    <!--return;-->
+    <!--}-->
+    <!--//设置Dialog从窗体底部弹出-->
+    <!--dialogWindow.setGravity(Gravity.BOTTOM);-->
+    <!--//获得窗体的属性-->
+    <!--WindowManager.LayoutParams lp = dialogWindow.getAttributes();-->
+    <!--lp.width = ViewGroup.LayoutParams.MATCH_PARENT;-->
+    <!--lp.height  = ViewGroup.LayoutParams.WRAP_CONTENT;-->
+    <!--//        lp.y = 20;//设置Dialog距离底部的距离-->
+    <!--//将属性设置给窗体-->
+    <!--dialogWindow.setAttributes(lp);-->
+    <!--dialog.show();//显示对话框-->
+    <!--}-->

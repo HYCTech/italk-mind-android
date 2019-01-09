@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.italkmind.client.vo.protocol.body;
+
+message MsgAckMessage {
+    uint32 recType = 1;
+    uint64 recId = 2;
+    uint64 orderId = 3;
+    uint64 msgId = 4;
+}
+
+message MsgReqMessage {
+    uint64 sendId = 1;
+    uint32 sendType = 2;
+    uint64 orderId = 3;
+    uint64 msgId = 4;
+}

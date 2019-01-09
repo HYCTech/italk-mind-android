@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_text_bar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/gray1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="备注名" />
+
+        <EditText
+            android:id="@+id/et_remark_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="请输入备注名"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_black_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/gray1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:text="标签" />
+
+        <EditText
+            android:id="@+id/et_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="请输入标签"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_black_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/gray1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="电话号码" />
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="请输入电话号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_black_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/gray1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="描述" />
+
+        <EditText
+            android:id="@+id/et_descrpition"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="添加更多描述信息"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/color_black_70"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray1" />
+
+        <ImageView
+            android:id="@+id/select_picture"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/no_chat" />
+    </LinearLayout>
+</ScrollView>

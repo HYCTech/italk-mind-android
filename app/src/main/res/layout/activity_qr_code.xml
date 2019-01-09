@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/f5f5f5"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_text_bar" />
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/f5f5f5"
+        android:layout_marginTop="100dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ns_dialog_card_bg" />
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:text="天青色等烟雨"
+            android:textColor="@color/color_black_86"
+            android:textSize="12.0sp" />
+
+        <ImageView
+            android:id="@+id/er_wei_ma"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_nick_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/er_wei_ma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:text="扫一扫上方的二维码，加我好友"
+            android:textColor="@color/color_black_86"
+            android:textSize="12.0sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

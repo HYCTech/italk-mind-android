@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lw.italk"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <permission
+        android:name="com.lw.italk.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- ******************极光权限***************** -->
+    <!-- Required -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 我的二维码界面 -->
+        <activity android:name=".activity.QRCodeActivity" />
+        <!-- 修改昵称界面 -->
+        <activity
+            android:name=".activity.ChangeNickNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改通知消息界面 -->
+        <activity
+            android:name=".activity.SettingMessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 通知消息设置界面 -->
+        <activity
+            android:name=".activity.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 通知消息隐私界面 -->
+        <activity
+            android:name=".activity.SettingPrivacyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 黑名单界面 -->
+        <activity
+            android:name=".activity.BlackFriendListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 通知消息关于界面 -->
+        <activity
+            android:name=".activity.SettingAboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录界面 -->
+        <activity
+            android:name=".activity.AccountLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ATAccountRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelVerificationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 完善信息界面 -->
+        <activity
+            android:name=".activity.PerfectInformationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新的朋友界面 -->
+        <activity
+            android:name=".activity.NewFriendsListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 扫描二维码界面 -->
+        <activity
+            android:name=".zxing.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <!-- 朋友详细资料界面 -->
+        <activity
+            android:name=".activity.AcceptFriendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 朋友验证界面 -->
+        <activity
+            android:name=".activity.FriendVerificationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加手机联系人界面 -->
+        <activity
+            android:name=".activity.AddLocalContactActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的群聊界面 -->
+        <activity
+            android:name=".activity.MyGroupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加群聊界面 -->
+        <activity
+            android:name=".activity.AddGroupChatActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置备注和标签界面 -->
+        <activity
+            android:name=".activity.SetRemarkActivity"
+            android:screenOrientation="portrait" />
+        <!-- 点击查看朋友界面 -->
+        <activity
+            android:name=".activity.SendChatActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置朋友资料界面 -->
+        <activity
+            android:name=".activity.SettingFriendInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索联系人界面 -->
+        <activity
+            android:name=".activity.SearchNetContactActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择一个群聊发送名片界面 -->
+        <activity
+            android:name=".activity.SelectLateChatActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索后 -->
+        <activity
+            android:name=".activity.AddNetFriendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 所有的搜索界面 -->
+        <activity
+            android:name=".activity.SearchViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <!-- 群成员列表 -->
+        <activity
+            android:name=".activity.GroupContactListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 群聊详细列表 -->
+        <activity
+            android:name=".activity.GroupChatDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 聊天详情列表 -->
+        <activity
+            android:name=".activity.ContactChatDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.laojiang.imagepickers.ui.grid.view.ImageDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/lao_jiang"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.laojiang.imagepickers.ui.pager.view.ImagePagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/lao_jiang"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.laojiang.imagepickers.ui.crop.ImageCropActivity" />
+        <activity
+            android:name="com.laojiang.imagepickers.ui.video.VideoDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/lao_jiang" />
+        <activity
+            android:name=".activity.LocalVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/lao_jiang" />
+        <activity
+            android:name=".activity.MainRecordActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--查看用户详情-->
+        <activity
+            android:name=".activity.ShowUserInfoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- <activity android:name="com.laojiang.imagepickers.ui.camera.DiyCameraActivity" -->
+        <!-- android:configChanges="keyboardHidden|screenSize|orientation" -->
+        <!-- android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity> -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name="com.zhang.netty_lib.NettyService" />
+
+        <activity
+            android:name=".activity.CompanyActivity"
+            android:label="@string/title_activity_company"></activity>
+    </application>
+
+</manifest>
